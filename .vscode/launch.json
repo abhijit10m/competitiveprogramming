@@ -1,0 +1,388 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'assembly-line'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=assembly-line"
+                ],
+                "filter": {
+                    "name": "assembly-line",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'assembly-line'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=assembly-line",
+                    "--package=assembly-line"
+                ],
+                "filter": {
+                    "name": "assembly-line",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'health_statistics'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=health_statistics"
+                ],
+                "filter": {
+                    "name": "health_statistics",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'health-statistics'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=health-statistics",
+                    "--package=health_statistics"
+                ],
+                "filter": {
+                    "name": "health-statistics",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'low_power_embedded_game'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=low_power_embedded_game"
+                ],
+                "filter": {
+                    "name": "low_power_embedded_game",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'low-power-embedded-game'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=low-power-embedded-game",
+                    "--package=low_power_embedded_game"
+                ],
+                "filter": {
+                    "name": "low-power-embedded-game",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'lucians-luscious-lasagna'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=lucians-luscious-lasagna"
+                ],
+                "filter": {
+                    "name": "lucians-luscious-lasagna",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'lucians-luscious-lasagna'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=lucians-luscious-lasagna",
+                    "--package=lucians-luscious-lasagna"
+                ],
+                "filter": {
+                    "name": "lucians-luscious-lasagna",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'magazine_cutout'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=magazine_cutout"
+                ],
+                "filter": {
+                    "name": "magazine_cutout",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'magazine-cutout'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=magazine-cutout",
+                    "--package=magazine_cutout"
+                ],
+                "filter": {
+                    "name": "magazine-cutout",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'resistor-color'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=resistor-color"
+                ],
+                "filter": {
+                    "name": "resistor-color",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'resistor-color'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=resistor-color",
+                    "--package=resistor-color"
+                ],
+                "filter": {
+                    "name": "resistor-color",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'role_playing_game'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=role_playing_game"
+                ],
+                "filter": {
+                    "name": "role_playing_game",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'role-playing-game'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=role-playing-game",
+                    "--package=role_playing_game"
+                ],
+                "filter": {
+                    "name": "role-playing-game",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'semi_structured_logs'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=semi_structured_logs"
+                ],
+                "filter": {
+                    "name": "semi_structured_logs",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'semi-structured-logs'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=semi-structured-logs",
+                    "--package=semi_structured_logs"
+                ],
+                "filter": {
+                    "name": "semi-structured-logs",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'short_fibonacci'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=short_fibonacci"
+                ],
+                "filter": {
+                    "name": "short_fibonacci",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'short-fibonacci'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=short-fibonacci",
+                    "--package=short_fibonacci"
+                ],
+                "filter": {
+                    "name": "short-fibonacci",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'sublist'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=sublist"
+                ],
+                "filter": {
+                    "name": "sublist",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'sublist'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=sublist",
+                    "--package=sublist"
+                ],
+                "filter": {
+                    "name": "sublist",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
