@@ -7,7 +7,7 @@ pub fn anagrams_for<'a>(word: &'a str, possible_anagrams: &'a [&str]) -> HashSet
     let word_letters = count_letters(word);
 
     possible_anagrams.iter().for_each(|possible_word| { 
-        if *possible_word == word {
+        if *possible_word.to_lowercase() == word.to_lowercase() {
             return
         }
 
