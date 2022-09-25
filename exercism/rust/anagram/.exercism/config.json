@@ -1,23 +1,31 @@
 {
-  "blurb": "Write a function to determine if a list is a sublist of another list.",
+  "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
   "authors": [
     "EduardoBautista"
   ],
   "contributors": [
+    "andrewclarkson",
     "ashleygwilliams",
+    "bobahop",
+    "chancancode",
+    "ClashTheBunny",
     "coriolinus",
     "cwhakes",
-    "eddyp",
+    "Dimkar3000",
     "EduardoBautista",
     "efx",
     "ErikSchierboom",
+    "gris",
     "IanWhitney",
     "kytrinyx",
     "lutostag",
     "mkantor",
     "nfiles",
     "petertseng",
+    "pminten",
+    "quartsize",
     "rofrol",
+    "stevejb71",
     "stringparser",
     "xakon",
     "ZapAnton"
@@ -28,10 +36,12 @@
       "Cargo.toml"
     ],
     "test": [
-      "tests/sublist.rs"
+      "tests/anagram.rs"
     ],
     "example": [
       ".meta/example.rs"
     ]
-  }
+  },
+  "source": "Inspired by the Extreme Startup game",
+  "source_url": "https://github.com/rchatley/extreme_startup"
 }

@@ -1,3 +1,4 @@
+use std::cmp::Ordering;
 #[derive(Debug)]
 pub enum CalculatorInput {
     Add,
@@ -8,8 +9,32 @@ pub enum CalculatorInput {
 }
 
 pub fn evaluate(inputs: &[CalculatorInput]) -> Option<i32> {
-    unimplemented!(
-		"Given the inputs: {:?}, evaluate them as though they were a Reverse Polish notation expression",
-		inputs,
-	);
+    let mut stack = Vec::<i32>::new();
+
+    for input in inputs {
+        match input {
+            CalculatorInput::Value(value) => {stack.push( *value );},
+            _ => {
+                match stack.len().cmp(&2) {
+                    Ordering::Less => { return None}
+                    _ => {
+                        let a = stack.pop().unwrap();
+                        let b = stack.pop().unwrap();
+                        match input {
+                            CalculatorInput::Add => { stack.push(b + a) },
+                            CalculatorInput::Subtract => { stack.push(b - a) },
+                            CalculatorInput::Multiply => { stack.push( b * a) },
+                            CalculatorInput::Divide => { stack.push(b / a) },
+                            _ => {return None}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    match stack.len().cmp(&2) {
+        Ordering::Less => stack.pop(),
+        _ => None
+    }
+    
 }
